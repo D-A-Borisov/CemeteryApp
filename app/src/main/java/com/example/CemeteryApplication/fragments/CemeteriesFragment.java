@@ -1,6 +1,7 @@
 package com.example.CemeteryApplication.fragments;
 
 import android.os.Bundle;
+import android.text.InputType;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -43,6 +44,8 @@ public class CemeteriesFragment extends Fragment {
             );
             spinnerAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
             cemeterySpinner.setAdapter(spinnerAdapter);
+
+            setupRussianInput(searchField);
 
             // Настройка автодополнения
             String[] suggestions = {"Иванов", "Петров", "Сидоров", "Квартал 1", "Квартал 2", "Аллея Славы"};
@@ -87,5 +90,16 @@ public class CemeteriesFragment extends Fragment {
         }
 
         return view;
+    }
+
+    private void setupRussianInput(AutoCompleteTextView searchField) {
+        // Разрешаем ввод русских символов
+        searchField.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_FLAG_CAP_WORDS);
+
+        // Русская подсказка
+        searchField.setHint("Введите фамилию...");
+
+        // Минимальное количество символов для подсказок
+        searchField.setThreshold(1);
     }
 }
