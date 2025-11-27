@@ -1,0 +1,80 @@
+<resources>
+    <string name="app_name">Кладбища Екатеринбурга</string>
+
+    <!-- Главная страница -->
+    <string name="app_title">Кладбища Екатеринбурга</string>
+    <string name="app_subtitle">Социальный проект навигации</string>
+    <string name="find_grave_title">Найдите место захоронения</string>
+    <string name="app_description">База данных кладбищ Екатеринбурга. Поиск захоронений, информация о кладбищах и навигация.</string>
+    <string name="start_search">Начать поиск</string>
+    <string name="cemeteries_list">Список кладбищ</string>
+    <string name="quick_access">Быстрый доступ</string>
+    <string name="list">Список</string>
+    <string name="map">Карта</string>
+    <string name="settings">Настройки</string>
+    <string name="settings_description">Настройте приложение под себя</string>
+
+    <!-- Нижнее меню -->
+    <string name="home">Главная</string>
+    <string name="search">Поиск</string>
+    <string name="about">О проекте</string>
+
+    <!-- Поиск -->
+    <string name="search_graves">Поиск захоронений</string>
+    <string name="cemetery">Кладбище</string>
+    <string name="search_hint">Фамилия, квартал или участок</string>
+    <string name="search_button_text">Найти</string>
+    <string name="search_results">Результаты поиска</string>
+    <string name="default_results">Здесь будут отображены результаты вашего поиска</string>
+    <string name="all_cemeteries">Все кладбища</string>
+
+    <!-- О проекте -->
+    <string name="about_project">О проекте</string>
+    <string name="about_description">Социальный проект «Кладбища Екатеринбурга» создан для помощи жителям города в поиске мест захоронения их близких. Проект объединяет информацию о всех кладбищах города, предоставляет навигацию и сохраняет историческую память.</string>
+    <string name="our_mission">Наша миссия</string>
+    <string name="mission_items">• Сохранение исторической памяти\n• Помощь в поиске захоронений\n• Навигация по кладбищам\n• Информационная поддержка</string>
+    <string name="statistics">Статистика</string>
+
+    <!-- Контакты -->
+    <string name="contacts">Контакты</string>
+    <string name="contact_info">Контактная информация</string>
+    <string name="email">Email</string>
+    <string name="email_address">info@cemeteries-ekb.ru</string>
+    <string name="phone">Телефон</string>
+    <string name="phone_number">+7 (343) 000-00-00</string>
+    <string name="useful_links">Полезные ссылки</string>
+    <string name="visit_rules">Правила посещения кладбищ</string>
+    <string name="add_info">Как добавить информацию</string>
+    <string name="social_project">Социальный проект</string>
+    <string name="project_description">Некоммерческий проект по сохранению памяти и помощи жителям города</string>
+
+    <!-- Настройки -->
+    <string name="settings_title">Настройки</string>
+    <string name="app_settings">Настройки приложения</string>
+    <string name="offline_mode">Офлайн режим</string>
+    <string name="offline_mode_description">Загрузка карт для использования без интернета</string>
+    <string name="map_quality">Качество карты</string>
+    <string name="map_quality_description">Выберите качество отображаемых карт</string>
+    <string name="about_app">О приложении</string>
+    <string name="app_info">Информация о приложении</string>
+    <string name="version">Версия</string>
+    <string name="more_info">Подробнее о приложении</string>
+    <string name="app_details">Кладбища Екатеринбурга\nВерсия 1.0.0\n\nСоциальный проект навигации по захоронениям</string>
+
+    <!-- Качество карты варианты -->
+    <string name="quality_high">Высокое качество</string>
+    <string name="quality_medium">Среднее качество</string>
+    <string name="quality_low">Низкое качество (эконом трафик)</string>
+
+    <!-- Уведомления -->
+    <string name="offline_maps_loading">Загрузка карт для офлайн использования</string>
+    <string name="settings_saved">Настройки сохранены</string>
+
+    <!-- Яндекс карты -->
+    <string name="yandex_maps_title">Яндекс Карты - Кладбища</string>
+    <string name="center_map">Центрировать карту</string>
+    <string name="show_all_cemeteries">Все кладбища</string>
+    <string name="zoom_in">Увеличить</string>
+    <string name="zoom_out">Уменьшить</string>
+    <string name="back">Назад</string>
+</resources>

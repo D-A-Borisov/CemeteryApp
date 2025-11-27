@@ -1,0 +1,66 @@
+plugins {
+    alias(libs.plugins.android.application)
+}
+
+android {
+    namespace 'com.example.CemeteryApplication'
+    compileSdk 35
+
+    buildFeatures {
+        buildConfig true
+    }
+    defaultConfig {
+        applicationId "com.example.CemeteryApplication"
+        minSdk 29
+        targetSdk 35
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        // Безопасное получение API ключа из local.properties
+        def localProperties = new Properties()
+        def localPropertiesFile = rootProject.file("local.properties")
+        if (localPropertiesFile.exists()) {
+            localProperties.load(new FileInputStream(localPropertiesFile))
+        }
+
+        // Для использования в Java коде через BuildConfig
+        buildConfigField "String", "YANDEX_MAPS_API_KEY",
+                "\"${localProperties.getProperty("YANDEX_MAPS_API_KEY", "")}\""
+
+        // Для использования в AndroidManifest.xml
+        manifestPlaceholders = [yandexMapsApiKey: localProperties.getProperty("YANDEX_MAPS_API_KEY", "")]
+    }
+
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+}
+
+dependencies {
+
+    implementation 'com.yandex.android:maps.mobile:4.3.1-lite'
+    implementation 'com.google.android.gms:play-services-maps:18.1.0'
+    implementation 'com.android.volley:volley:1.2.1'
+    implementation 'com.google.code.gson:gson:2.10.1'
+
+    implementation libs.appcompat
+    implementation libs.material
+    testImplementation libs.junit
+    androidTestImplementation libs.ext.junit
+    androidTestImplementation libs.espresso.core
+}

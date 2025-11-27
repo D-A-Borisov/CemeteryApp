@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="map_quality_options">
+        <item>@string/quality_high</item>
+        <item>@string/quality_medium</item>
+        <item>@string/quality_low</item>
+    </string-array>
+</resources>
